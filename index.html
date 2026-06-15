@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hajar Lamharzi — Développeuse Full Stack</title>
+  <meta name="description"
+    content="Portfolio de Hajar Lamharzi, étudiante ingénieure en génie informatique à l'ISGA Rabat, à la recherche d'un stage pré-embauche en développement Full Stack.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-logo">Hajar<span>.</span></div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#about" data-fr="À propos" data-en="About">À propos</a></li>
+        <li><a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+        <li><a href="#projects" data-fr="Projets" data-en="Projects">Projets</a></li>
+        <li><a href="#experience" data-fr="Expérience" data-en="Experience">Expérience</a></li>
+        <li><a href="#education" data-fr="Formation" data-en="Education">Formation</a></li>
+        <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button id="btn-fr" class="active" onclick="setLang('fr')">FR</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="hero-tag" data-fr="Développeuse Full Stack" data-en="Full Stack Developer">Développeuse Full Stack
+      </div>
+      <h1 class="hero-name">
+        <span class="first">Hajar</span>
+        <span class="last">Lamharzi</span>
+      </h1>
+      <p class="hero-desc">
+        <span
+          data-fr="📢 À la recherche d'un <strong>stage pré-embauche rémunéré</strong> en développement web & logiciel. Étudiante Ingénieure en Génie Informatique à l'ISGA Rabat, basée à Salé / Rabat."
+          data-en="📢 Looking for a <strong>paid pre-hire internship</strong> in web & software development. Computer Engineering student at ISGA Rabat, based in Salé / Rabat.">
+          📢 À la recherche d'un <strong>stage pré-embauche rémunéré</strong> en développement web & logiciel. Étudiante
+          Ingénieure en Génie Informatique à l'ISGA Rabat, basée à Salé / Rabat.
+        </span>
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">
+          <span data-fr="Me contacter" data-en="Contact me">Me contacter</span>
+          <span class="scroll-arrow">↓</span>
+        </a>
+        <a href="#projects" class="btn-outline">
+          <span data-fr="Voir mes projets" data-en="See my projects">Voir mes projets</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-photo-frame">
+        <div class="hero-photo-inner">
+          <div class="hero-photo-initials">HL</div>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label" data-fr="Stages" data-en="Internships">Stages</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">15+</span>
+          <span class="stat-label" data-fr="Technologies" data-en="Technologies">Technologies</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3</span>
+          <span class="stat-label" data-fr="Langues" data-en="Languages">Langues</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-label" data-fr="À propos de moi" data-en="About me">À propos de moi</div>
+    <h2 class="section-title">
+      <span data-fr="Motivée & curieuse," data-en="Motivated & curious,">Motivée & curieuse,</span><br>
+      <em data-fr="toujours en mouvement" data-en="always moving forward">toujours en mouvement</em>
+    </h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-fr="Je suis <strong>étudiante en 4ème année Cycle Ingénieur en Génie Informatique</strong> à l'<em>ISGA Rabat</em>, diplômée en <em>Développement Digital Full Stack</em> à l'ISTA Hay Riad."
+          data-en="I am a <strong>4th-year Computer Engineering student</strong> at <em>ISGA Rabat</em>, and a graduate in <em>Full Stack Digital Development</em> from ISTA Hay Riad.">
+          Je suis <strong>étudiante en 4ème année Cycle Ingénieur en Génie Informatique</strong> à l'<em>ISGA
+            Rabat</em>, diplômée en <em>Développement Digital Full Stack</em> à l'ISTA Hay Riad.
+        </p>
+        <p data-fr="Grâce à plusieurs stages en développement Full Stack, j'ai acquis une solide expérience en <strong>développement front-end et back-end</strong> — de la conception d'architectures sécurisées aux interfaces utilisateur soignées."
+          data-en="Through several Full Stack internships, I have gained solid experience in <strong>front-end and back-end development</strong> — from secure backend architectures to polished user interfaces.">
+          Grâce à plusieurs stages en développement Full Stack, j'ai acquis une solide expérience en
+          <strong>développement front-end et back-end</strong> — de la conception d'architectures sécurisées aux
+          interfaces utilisateur soignées.
+        </p>
+        <p data-fr="Je suis <strong>motivée, sérieuse et curieuse</strong>, prête à rejoindre une équipe expérimentée pour mettre mes compétences en pratique sur des projets réels. Je recherche actuellement un <em>stage pré-embauche rémunéré</em>."
+          data-en="I am <strong>motivated, serious and curious</strong>, ready to join an experienced team and put my skills into practice on real projects. I am currently looking for a <em>paid pre-hire internship</em>.">
+          Je suis <strong>motivée, sérieuse et curieuse</strong>, prête à rejoindre une équipe expérimentée pour mettre
+          mes compétences en pratique sur des projets réels. Je recherche actuellement un <em>stage pré-embauche
+            rémunéré</em>.
+        </p>
+      </div>
+      <div class="about-details">
+        <div class="detail-item">
+          <span class="detail-icon">📍</span>
+          <div class="detail-content">
+            <div class="detail-label" data-fr="Localisation" data-en="Location">Localisation</div>
+            <div class="detail-value">Salé / Rabat, Maroc</div>
+          </div>
+        </div>
+        <div class="detail-item">
+          <span class="detail-icon">✉️</span>
+          <div class="detail-content">
+            <div class="detail-label">Email</div>
+            <div class="detail-value"><a href="mailto:hajarlamharzi@gmail.com">hajarlamharzi@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="detail-item">
+          <span class="detail-icon">💼</span>
+          <div class="detail-content">
+            <div class="detail-label">LinkedIn</div>
+            <div class="detail-value"><a href="https://linkedin.com/in/lamharzi-hajar-731147205/"
+                target="_blank">lamharzi-hajar</a></div>
+          </div>
+        </div>
+        <div class="detail-item">
+          <span class="detail-icon">🐱</span>
+          <div class="detail-content">
+            <div class="detail-label">GitHub</div>
+            <div class="detail-value"><a href="https://github.com/Hajarlam" target="_blank">github.com/Hajarlam</a>
+            </div>
+          </div>
+        </div>
+        <div class="detail-item">
+          <span class="detail-icon">🕐</span>
+          <div class="detail-content">
+            <div class="detail-label" data-fr="Disponibilité" data-en="Availability">Disponibilité</div>
+            <div class="detail-value" data-fr="Présentiel · Hybride · Remote" data-en="On-site · Hybrid · Remote">
+              Présentiel · Hybride · Remote</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-label" data-fr="Compétences techniques" data-en="Technical skills">Compétences techniques</div>
+    <h2 class="section-title">
+      <span data-fr="Mon" data-en="My">Mon</span> <em data-fr="arsenal" data-en="toolkit">arsenal</em>
+    </h2>
+    <div class="skills-categories">
+      <div>
+        <div class="skill-cat-title" data-fr="— Frontend" data-en="— Frontend">— Frontend</div>
+        <div class="skills-grid">
+          <div class="skill-chip">JavaScript</div>
+          <div class="skill-chip">React.js</div>
+          <div class="skill-chip">Angular</div>
+          <div class="skill-chip">HTML / CSS</div>
+          <div class="skill-chip">Bootstrap</div>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cat-title" data-fr="— Backend & Base de données" data-en="— Backend & Databases">— Backend &
+          Base de données</div>
+        <div class="skills-grid">
+          <div class="skill-chip">PHP</div>
+          <div class="skill-chip">Laravel</div>
+          <div class="skill-chip">MySQL</div>
+          <div class="skill-chip">PostgreSQL</div>
+
+
+        </div>
+      </div>
+      <div>
+        <div class="skill-cat-title" data-fr="— Outils & Méthodes" data-en="— Tools & Methods">— Outils & Méthodes</div>
+        <div class="skills-grid">
+          <div class="skill-chip">Git</div>
+          <div class="skill-chip">Agile / Scrum</div>
+          <div class="skill-chip">Postman</div>
+          <div class="skill-chip">JIRA</div>
+          <div class="skill-chip">StarUML</div>
+          <div class="skill-chip">VirtualBox</div>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cat-title" data-fr="— 📚 En cours d'apprentissage" data-en="— 📚 Currently learning">— 📚 En
+          cours d'apprentissage</div>
+        <div class="skills-grid">
+          <div class="skill-chip skill-learning">ASP.NET</div>
+          <div class="skill-chip skill-learning">C#</div>
+          <div class="skill-chip skill-learning">Spring Boot</div>
+          <div class="skill-chip skill-learning">JEE</div>
+          <div class="skill-chip skill-learning">Java avancé</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-label" data-fr="Mes projets" data-en="My projects">Mes projets</div>
+    <h2 class="section-title">
+      <span data-fr="Ce que j'ai" data-en="What I've">Ce que j'ai</span> <em data-fr="réalisé"
+        data-en="built">réalisé</em>
+    </h2>
+    <div class="projects-grid">
+
+      <!-- Project 1: ASVS -->
+      <div class="project-card">
+        <!-- Slider -->
+        <div class="project-img-wrap">
+          <div class="project-slider" id="asvs-slider">
+            <div class="slide active"><img src="asvs1.png" alt="ASVS — Page d'accueil" loading="lazy"></div>
+            <div class="slide"><img src="asvs2.png" alt="ASVS — Connexion" loading="lazy"></div>
+            <div class="slide"><img src="asvs3.png" alt="ASVS — Chat IA Sécurité" loading="lazy"></div>
+            <div class="slide"><img src="asvs4.png" alt="ASVS — Référentiel" loading="lazy"></div>
+          </div>
+          <div class="project-img-overlay"></div>
+          <div class="project-badge" data-fr="Cybersécurité · Full Stack" data-en="OWASP· Angular">
+            Cybersécurité · Full Stack</div>
+          <div class="slider-dots">
+            <button class="slider-dot active" data-slide="0" aria-label="1"></button>
+            <button class="slider-dot" data-slide="1" aria-label="2"></button>
+            <button class="slider-dot" data-slide="2" aria-label="3"></button>
+            <button class="slider-dot" data-slide="3" aria-label="4"></button>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="project-info">
+          <div class="project-num-bg">01</div>
+          <div class="project-category" data-fr="Projet personnel" data-en="Personal project">Projet personnel</div>
+          <h3 class="project-title">ASVS Projects</h3>
+          <p class="project-desc">
+            <span
+              data-fr="Plateforme web basée sur l'<strong>OWASP ASVS</strong> avec un assistant IA pour détecter des vulnérabilités dans des repositories GitHub et proposer des corrections de code sécurisé."
+              data-en="Web platform based on <strong>OWASP ASVS</strong> with an AI assistant to detect vulnerabilities in GitHub repositories and suggest secure code fixes.">
+              Plateforme web basée sur l'<strong>OWASP ASVS</strong> avec un assistant IA pour détecter des
+              vulnérabilités dans des repositories GitHub et proposer des corrections de code sécurisé.
+            </span>
+          </p>
+          <ul class="project-features">
+            <li><span class="feat-icon">🛡️</span><span data-fr="Scan GitHub & détection de secrets"
+                data-en="GitHub scan & secret detection">Scan GitHub & détection de secrets</span></li>
+            <li><span class="feat-icon">🤖</span><span data-fr="Chat IA (Gemini 2.5 Flash)"
+                data-en="AI Chat (Gemini 2.5 Flash)">Chat IA (Gemini 2.5 Flash)</span></li>
+            <li><span class="feat-icon">📊</span><span data-fr="Dashboard de vulnérabilités"
+                data-en="Vulnerability dashboard">Dashboard de vulnérabilités</span></li>
+            <li><span class="feat-icon">🔍</span><span data-fr="Référentiel ASVS filtrable"
+                data-en="Filterable ASVS reference">Référentiel ASVS filtrable</span></li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">OWASP ASVS</span>
+            <span class="tech-tag">Gemini AI</span>
+            <span class="tech-tag">Vercel</span>
+            <span class="tech-tag">MCP</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://asvs-projets.vercel.app" target="_blank" class="project-link-btn live">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              <span data-fr="Voir en ligne" data-en="View live">Voir en ligne</span>
+            </a>
+            <a href="https://github.com/Hajarlam/ASVS_Projets" target="_blank" class="project-link-btn gh">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Green Car Wash -->
+      <div class="project-card">
+
+        <!-- Slider -->
+        <div class="project-img-wrap" style="order: 1">
+          <div class="project-slider" id="carwash-slider">
+            <div class="slide active"><img src="carwash1.png" alt="Green Car Wash — Accueil" loading="lazy"></div>
+            <div class="slide"><img src="carwash2.png" alt="Green Car Wash — Réserver" loading="lazy"></div>
+            <div class="slide"><img src="carwash3.png" alt="Green Car Wash — Dashboard" loading="lazy"></div>
+            <div class="slide"><img src="carwash4.png" alt="Green Car Wash — Statistiques" loading="lazy"></div>
+            <div class="slide"><img src="carwash5.png" alt="Green Car Wash — Prestations" loading="lazy"></div>
+          </div>
+          <div class="project-img-overlay"></div>
+          <div class="project-badge" data-fr="PFE · Laravel · Full Stack"
+            data-en="Final Project · Laravel · Full Stack">PFE · Laravel · Full Stack</div>
+          <div class="slider-dots" id="carwash-dots">
+            <button class="slider-dot active" data-slide="0" aria-label="1"></button>
+            <button class="slider-dot" data-slide="1" aria-label="2"></button>
+            <button class="slider-dot" data-slide="2" aria-label="3"></button>
+            <button class="slider-dot" data-slide="3" aria-label="4"></button>
+            <button class="slider-dot" data-slide="4" aria-label="5"></button>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="project-info" style="order: 2">
+          <div class="project-num-bg">02</div>
+          <div class="project-category" data-fr="Projet de fin d'études (PFE)" data-en="Final Year Project (PFE)">Projet
+            de fin d'études (PFE)</div>
+          <h3 class="project-title">Green Car Wash</h3>
+          <p class="project-desc">
+            <span
+              data-fr="Système de gestion complet pour un centre de lavage automobile : réservations en ligne, gestion des prestations, suivi des employés, rapports financiers et notifications <strong>WhatsApp</strong> automatiques."
+              data-en="Complete management system for a car wash center: online booking, service tracking, employee management, financial reports and automatic <strong>WhatsApp</strong> notifications.">
+              Système de gestion complet pour un centre de lavage automobile : réservations en ligne, gestion des
+              prestations, suivi des employés, rapports financiers et notifications <strong>WhatsApp</strong>
+              automatiques.
+            </span>
+          </p>
+          <ul class="project-features">
+            <li><span class="feat-icon">🗓️</span><span data-fr="Réservations en ligne (véhicule, date, heure)"
+                data-en="Online booking (vehicle, date, time)">Réservations en ligne (véhicule, date, heure)</span></li>
+            <li><span class="feat-icon">💰</span><span data-fr="Suivi dépenses &amp; avances employés"
+                data-en="Expenses &amp; employee advance tracking">Suivi dépenses &amp; avances employés</span></li>
+            <li><span class="feat-icon">📊</span><span data-fr="Rapports financiers journaliers/mensuels"
+                data-en="Daily/monthly financial reports">Rapports financiers journaliers/mensuels</span></li>
+            <li><span class="feat-icon">💬</span><span data-fr="Confirmations clients via WhatsApp"
+                data-en="Client confirmations via WhatsApp">Confirmations clients via WhatsApp</span></li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel (PHP)</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Bootstrap</span>
+            <span class="tech-tag">WhatsApp API</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <!-- (If you have a live link later, you can add it here) -->
+            <a href="https://github.com/Hajarlam/LavagePFA" target="_blank" class="project-link-btn gh">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Project 3: HealthTrack AI -->
+      <div class="project-card">
+
+        <!-- Slider -->
+        <div class="project-img-wrap">
+          <div class="project-slider" id="health-slider">
+            <div class="slide active"><img src="healthtrack1.jpg" alt="HealthTrack AI — Connexion" loading="lazy"></div>
+            <div class="slide"><img src="healthtrack2.jpg" alt="HealthTrack AI — Mesure" loading="lazy"></div>
+            <div class="slide"><img src="healthtrack3.jpg" alt="HealthTrack AI — Mesure" loading="lazy"></div>
+            <div class="slide"><img src="healthtrack4.jpg" alt="HealthTrack AI — Mesure" loading="lazy"></div>
+            <div class="slide"><img src="healthtrack5.jpg" alt="HealthTrack AI — Mesure" loading="lazy"></div>
+          </div>
+          <div class="project-img-overlay"></div>
+          <div class="project-badge" data-fr="En cours · Angular · Spring Boot"
+            data-en="In Progress · Angular · Spring Boot">En cours · Angular · Spring Boot</div>
+          <div class="slider-dots" id="health-dots">
+            <button class="slider-dot active" data-slide="0" aria-label="1"></button>
+            <button class="slider-dot" data-slide="1" aria-label="2"></button>
+            <button class="slider-dot" data-slide="2" aria-label="3"></button>
+            <button class="slider-dot" data-slide="3" aria-label="4"></button>
+            <button class="slider-dot" data-slide="4" aria-label="5"></button>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="project-info">
+          <div class="project-num-bg">03</div>
+          <div class="project-category" data-fr="Application de suivi santé" data-en="Health Tracking Application">
+            Application de suivi santé</div>
+          <h3 class="project-title">HealthTrack AI</h3>
+          <p class="project-desc">
+            <span
+              data-fr="Une application intelligente de suivi de santé <em>(actuellement en cours de développement)</em>. Elle permet aux patients et médecins de gérer les constantes vitales, les alertes, et les rendez-vous de manière sécurisée."
+              data-en="An intelligent health tracking application <em>(currently in development)</em>. It allows patients and doctors to manage vital signs, alerts, and appointments securely.">
+              Une application intelligente de suivi de santé <em>(actuellement en cours de développement)</em>. Elle
+              permet aux patients et médecins de gérer les constantes vitales, les alertes, et les rendez-vous de
+              manière sécurisée.
+            </span>
+          </p>
+          <ul class="project-features">
+            <li><span class="feat-icon">🩺</span><span data-fr="Suivi des constantes (Tension, Glycémie, SpO2)"
+                data-en="Vitals tracking (Blood pressure, Blood sugar, SpO2)">Suivi des constantes (Tension, Glycémie,
+                SpO2)</span></li>
+            <li><span class="feat-icon">📱</span><span data-fr="Application Mobile (JEE/Android)"
+                data-en="Mobile App (JEE/Android)">Application Mobile (JEE/Android)</span></li>
+            <li><span class="feat-icon">👥</span><span data-fr="Espace Patient, Médecin et Admin"
+                data-en="Patient, Doctor, and Admin Portals">Espace Patient, Médecin et Admin</span></li>
+            <li><span class="feat-icon">🔔</span><span data-fr="Gestion des alertes et médicaments"
+                data-en="Alerts and medications management">Gestion des alertes et médicaments</span></li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">JEE (Mobile)</span>
+            <span class="tech-tag">Java</span>
+          </div>
+          <!-- <div class="project-actions">
+            <a href="https://github.com/Hajarlam" target="_blank" class="project-link-btn gh">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div> -->
+        </div>
+
+      </div>
+
+      <!-- Project 4: NeoBank -->
+      <div class="project-card">
+
+        <!-- Slider -->
+        <div class="project-img-wrap" style="order: 2">
+          <div class="project-slider" id="neobank-slider">
+            <div class="slide active"><img src="neobank1.png" alt="NeoBank — Connexion" loading="lazy"></div>
+            <div class="slide"><img src="neobank2.png" alt="NeoBank — Dashboard" loading="lazy"></div>
+            <div class="slide"><img src="neobank3.png" alt="NeoBank — Comptes" loading="lazy"></div>
+            <div class="slide"><img src="neobank4.png" alt="NeoBank — Détails du compte" loading="lazy"></div>
+            <div class="slide"><img src="neobank5.png" alt="NeoBank — Téléchargement du pdf" loading="lazy"></div>
+            <div class="slide"><img src="neobank6.png" alt="NeoBank — Imprimer reçu" loading="lazy"></div>
+          </div>
+          <div class="project-img-overlay"></div>
+          <div class="project-badge" data-fr="React · Full Stack" data-en="React · Full Stack">React · Full Stack</div>
+          <div class="slider-dots" id="neobank-dots">
+            <button class="slider-dot active" data-slide="0" aria-label="1"></button>
+            <button class="slider-dot" data-slide="1" aria-label="2"></button>
+            <button class="slider-dot" data-slide="2" aria-label="3"></button>
+            <button class="slider-dot" data-slide="3" aria-label="4"></button>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="project-info" style="order: 1">
+          <div class="project-num-bg">04</div>
+          <div class="project-category" data-fr="Plateforme Bancaire" data-en="Banking Platform">Plateforme Bancaire
+          </div>
+          <h3 class="project-title">NeoBank</h3>
+          <p class="project-desc">
+            <span
+              data-fr="Plateforme de gestion bancaire professionnelle. Suivez vos comptes, effectuez des opérations et analysez vos données en temps réel avec une interface moderne."
+              data-en="Professional banking management platform. Track your accounts, perform transactions and analyze your data in real time with a modern interface.">
+              Plateforme de gestion bancaire professionnelle. Suivez vos comptes, effectuez des opérations et analysez
+              vos données en temps réel avec une interface moderne.
+            </span>
+          </p>
+          <ul class="project-features">
+            <li><span class="feat-icon">👥</span><span data-fr="Gestion complète des clients & comptes"
+                data-en="Comprehensive client & account management">Gestion complète des clients & comptes</span></li>
+            <li><span class="feat-icon">🔒</span><span data-fr="Opérations sécurisées en temps réel"
+                data-en="Secure real-time transactions">Opérations sécurisées en temps réel</span></li>
+            <li><span class="feat-icon">📊</span><span data-fr="Tableau de bord analytique avancé"
+                data-en="Advanced analytics dashboard">Tableau de bord analytique avancé</span></li>
+            <li><span class="feat-icon">💸</span><span data-fr="Virements instantanés entre comptes"
+                data-en="Instant transfers between accounts">Virements instantanés entre comptes</span></li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Full Stack</span>
+          </div>
+          <!-- <div class="project-actions">
+            <a href="https://github.com/Hajarlam" target="_blank" class="project-link-btn gh">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+              GitHub
+            </a>
+          </div> -->
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="section-label" data-fr="Expérience professionnelle" data-en="Work experience">Expérience professionnelle
+    </div>
+    <h2 class="section-title">
+      <span data-fr="Mes" data-en="My">Mes</span> <em data-fr="stages" data-en="internships">stages</em>
+    </h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Mars 2024 — Mai 2024</div>
+        <div class="timeline-company">NewEraCom · Rabat</div>
+        <div class="timeline-role" data-fr="Développeuse Full Stack" data-en="Full Stack Developer">Développeuse Full
+          Stack</div>
+        <ul class="timeline-desc">
+          <li data-fr="Développement d'un CRM interne avec des modules dynamiques en Laravel et Vue.js."
+            data-en="Developed an internal CRM with dynamic modules using Laravel and Vue.js.">
+            Développement d'un CRM interne avec des modules dynamiques en Laravel et Vue.js.
+          </li>
+          <li
+            data-fr="Gestion des profils clients (statuts, segmentation, historique) avec logique métier personnalisée."
+            data-en="Managed client profiles (statuses, segmentation, history) with custom business logic.">
+            Gestion des profils clients (statuts, segmentation, historique) avec logique métier personnalisée.
+          </li>
+          <li
+            data-fr="Intégration de fonctionnalités logistiques dans le module ERP : flux, suivi commandes, reporting."
+            data-en="Integrated logistics features into the ERP module: flow management, order tracking, reporting.">
+            Intégration de fonctionnalités logistiques dans le module ERP : flux, suivi commandes, reporting.
+          </li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Octobre 2023 — Décembre 2023</div>
+        <div class="timeline-company">DigiInvest · Tanger</div>
+        <div class="timeline-role" data-fr="Développeuse Full Stack" data-en="Full Stack Developer">Développeuse Full
+          Stack</div>
+        <ul class="timeline-desc">
+          <li
+            data-fr="Personnalisation et évolution d'une application Laravel existante selon les besoins de l'entreprise."
+            data-en="Customized and evolved an existing Laravel application to meet business requirements.">
+            Personnalisation et évolution d'une application Laravel existante selon les besoins de l'entreprise.
+          </li>
+          <li data-fr="Développement de modules internes : navigation optimisée, nouvelles fonctionnalités métier."
+            data-en="Developed internal modules: optimized navigation, new business features.">
+            Développement de modules internes : navigation optimisée, nouvelles fonctionnalités métier.
+          </li>
+          <li data-fr="Collaboration avec l'équipe technique pour la cohérence du code et les tests fonctionnels."
+            data-en="Collaborated with the technical team for code consistency and functional testing.">
+            Collaboration avec l'équipe technique pour la cohérence du code et les tests fonctionnels.
+          </li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Mars 2023 — Avril 2023</div>
+        <div class="timeline-company">Tlog.ma · Salé</div>
+        <div class="timeline-role" data-fr="Développeuse Full Stack" data-en="Full Stack Developer">Développeuse Full
+          Stack</div>
+        <ul class="timeline-desc">
+          <li data-fr="Développement d'une solution de gestion de leads pour optimiser la validation et la conversion."
+            data-en="Developed a lead management solution to optimize validation and conversion processes.">
+            Développement d'une solution de gestion de leads pour optimiser la validation et la conversion.
+          </li>
+          <li data-fr="Architecture back-end sécurisée pour la gestion centralisée des utilisateurs, leads et experts."
+            data-en="Built a secure back-end architecture for centralized management of users, leads and experts.">
+            Architecture back-end sécurisée pour la gestion centralisée des utilisateurs, leads et experts.
+          </li>
+          <li data-fr="Conception d'interfaces ergonomiques pour améliorer l'UX et la fluidité de collecte de données."
+            data-en="Designed ergonomic interfaces to improve UX and data collection fluidity.">
+            Conception d'interfaces ergonomiques pour améliorer l'UX et la fluidité de collecte de données.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="section-label" data-fr="Formation" data-en="Education">Formation</div>
+    <h2 class="section-title">
+      <span data-fr="Mon" data-en="My">Mon</span> <em data-fr="parcours académique" data-en="academic journey">parcours
+        académique</em>
+    </h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-year" data-fr="Depuis octobre 2024" data-en="Since October 2024">Depuis octobre 2024</div>
+        <div class="edu-degree" data-fr="Génie Informatique — Cycle Ingénieur"
+          data-en="Computer Engineering — Engineering Cycle">Génie Informatique<br>— Cycle Ingénieur</div>
+        <div class="edu-school">ISGA · Rabat, Maroc</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-year">2021 — 2023</div>
+        <div class="edu-degree" data-fr="Développement Digital — Full Stack" data-en="Digital Development — Full Stack">
+          Développement Digital<br>— Full Stack</div>
+        <div class="edu-school">ISTA Hay Riad · Rabat</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-year">2020 — 2021</div>
+        <div class="edu-degree" data-fr="Baccalauréat — Sciences Physiques" data-en="Baccalaureate — Physical Sciences">
+          Baccalauréat<br>— Sciences Physiques</div>
+        <div class="edu-school" data-fr="Lycée Abou Der El Ghafari · Salé" data-en="Lycée Abou Der El Ghafari · Salé">
+          Lycée Abou Der El Ghafari · Salé</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section id="languages">
+    <div class="section-label" data-fr="Langues" data-en="Languages">Langues</div>
+    <h2 class="section-title">
+      <span data-fr="Comment je" data-en="How I">Comment je</span> <em data-fr="communique"
+        data-en="communicate">communique</em>
+    </h2>
+    <div class="lang-grid">
+      <div class="lang-card">
+        <div class="lang-name">Français</div>
+        <div class="lang-dots">
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot half"></div>
+        </div>
+        <div class="lang-level" data-fr="Avancé" data-en="Advanced">Avancé</div>
+      </div>
+      <div class="lang-card">
+        <div class="lang-name">English</div>
+        <div class="lang-dots">
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot empty"></div>
+        </div>
+        <div class="lang-level" data-fr="Intermédiaire avancé" data-en="Proficient">Intermédiaire avancé</div>
+      </div>
+      <div class="lang-card">
+        <div class="lang-name">العربية</div>
+        <div class="lang-dots">
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot filled"></div>
+          <div class="lang-dot filled"></div>
+        </div>
+        <div class="lang-level" data-fr="Langue maternelle" data-en="Native">Langue maternelle</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-sub" data-fr="Ouverte aux opportunités" data-en="Open to opportunities">Ouverte aux opportunités
+    </div>
+    <h2 class="contact-title">
+      <span data-fr="Travaillons" data-en="Let's work">Travaillons</span><br>
+      <em data-fr="ensemble !" data-en="together!">ensemble !</em>
+    </h2>
+    <a href="mailto:hajarlamharzi@gmail.com" class="contact-email">hajarlamharzi@gmail.com</a>
+    <div class="contact-links">
+      <a href="https://linkedin.com/in/lamharzi-hajar-731147205/" target="_blank" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/Hajarlam" target="_blank" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Hajar Lamharzi. Made with <span>♥</span></p>
+    <p data-fr="Salé / Rabat, Maroc" data-en="Salé / Rabat, Morocco">Salé / Rabat, Maroc</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
