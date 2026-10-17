@@ -40,6 +40,7 @@
     initSlider('carwash-slider', 'carwash-dots');
     initSlider('health-slider', 'health-dots');
     initSlider('neobank-slider', 'neobank-dots');
+    initSlider('lmspro-slider', 'lmspro-dots');
 
     // ── Scroll reveal for timeline items ──
     const obs = new IntersectionObserver(entries => {
